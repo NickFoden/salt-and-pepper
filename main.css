@@ -28,6 +28,7 @@ h3 {
   text-align: center;
   margin-bottom: 0.5em;
   transition-property: color;
+  transition-delay: .5s;
   transition-duration: 1s;
   transition-timing-function: linear;
 }
