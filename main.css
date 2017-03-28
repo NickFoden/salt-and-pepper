@@ -1,13 +1,15 @@
 body {
-  background: #4CA1AF; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, #4CA1AF , #C4E0E5);
 }      
 
 .all {
   width: 100%
 }
 
+.title {
+  text-decoration: none;
+  color: black;
+}
 .footer {
   position: absolute;
   bottom: 0px;
@@ -29,6 +31,13 @@ h3 {
   font-size: 4em;
   text-align: center;
   margin-bottom: 0.5em;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+h3:hover {
+  color: rgb(255, 140, 26);
 }
 
 h4 {
@@ -67,6 +76,14 @@ h4 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 1.5em;
   margin: 0 0 5px 0;
+  transition-property: background, border-radius;
+  transition-duration: .4s, 1s;
+  transition-timing-function: linear;
+}
+
+#search:hover{
+  background-color: rgb(255, 140, 26);
+  border-radius: 75%;
 }
 
 input[type=text] {
