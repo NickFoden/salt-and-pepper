@@ -56,7 +56,7 @@ function displaySearchData(data) {
       }
       resultElement += `</ul>`;
       resultElement += `</div>`;  
-        }
+    }
     display(finish);
     
   } else {
@@ -78,5 +78,3 @@ function watchSubmit() {
 $(function(){watchSubmit();
 
 });
-
-$('#search').transition({ x: 200 });

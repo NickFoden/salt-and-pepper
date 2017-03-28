@@ -107,12 +107,20 @@ input[type=text] {
   vertical-align: text-top;
   font-size: 1em;
   height: auto;
-  width: 300px;
+  width: 30%;
   background-color: rgb(225, 237, 239);
   border: 1px solid rgb(128, 128, 128);
   border-radius: 5px;
   padding: 10px;
   margin: 4px 4px 4px 4px;
+}
+
+.card img {
+  width: auto;
+  height: auto;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 0 auto;
+  display: block;
 }
 
 .list {
@@ -127,23 +135,25 @@ input[type=text] {
   font-size: 1em;
   padding-top: 20px;
   margin: 0 10px;
-  text-align: left;
-  direction: ltr;
-}
-
-.search-results img {
-	width: auto;
-  height: auto;
-  border: 1px solid rgb(0, 0, 0);
 }
 
 #random {
   font-size: 2.5em;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-device-width: 500px) {
   .card {
-    width: 50px;
+    width: 100%;
+    padding: 0;
+    margin: 4px 0px 4px 0px;
+  }
+  .search-results{
+    margin: 0;
+  }
+  .card img {
+    height: auto;
+    width: 90%;
+
   }
 }
 /*end*/
