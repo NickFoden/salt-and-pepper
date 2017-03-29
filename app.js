@@ -1,4 +1,4 @@
-var Edamam_URL = 'https://api.edamam.com/search';
+const Edamam_URL = 'https://api.edamam.com/search';
 
 $("#startButton").on('click', function(){
   $("#begin").remove();
