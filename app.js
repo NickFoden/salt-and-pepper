@@ -2,7 +2,6 @@ const Edamam_URL = 'https://api.edamam.com/search';
 
 $("#startButton").on('click', function(){
   $("#begin").remove();
-  /*$("#begin").addClass("hidden");*/
   displayContent();
 });
 
@@ -20,8 +19,7 @@ function getDataFromApi(searchTerm, callback) {
       q: searchTerm, 
     },
     dataType: 'json',
-    type: 'GET',
-    success: callback
+    success: callback,
   };
   $.ajax(settings);
 }
@@ -29,6 +27,7 @@ function getDataFromApi(searchTerm, callback) {
 function displaySearchData(data) {
   var resultArray = [];
   var resultElement = '';
+  var random = Math.floor((Math.random()*10)+1);
   if (data.hits.length > 0) {
     data.hits.forEach(function(item) {
       var resultObject = {};
@@ -38,11 +37,10 @@ function displaySearchData(data) {
       resultObject.source = item.recipe.source;
       resultObject.ingredients = [];
       resultObject.ingredients.push(item.recipe.ingredientLines);
-           
+
       resultArray.push(resultObject);
     });
-    
-    var random = Math.floor((Math.random()*10)+1);
+
     var finish = resultArray[random];
 
     function display(finishData) {
@@ -51,8 +49,8 @@ function displaySearchData(data) {
       resultElement += `<a href="${finishData.url}" target="_blank"><img src="${finishData.image}"></a><br>`;
       resultElement += `<h4><a href="${finishData.url}" target="_blank">${finishData.source}</a><h4><br>`;
       resultElement += `<ul class="list">`;
-      for (i=0; i < finishData.ingredients[0].length; i++) {
-        resultElement += `<li>(${finishData.ingredients[0][i]})</li>`;
+        for (i=0; i < finishData.ingredients[0].length; i++) {
+          resultElement += `<li>(${finishData.ingredients[0][i]})</li>`;
       }
       resultElement += `</ul>`;
       resultElement += `</div>`;  
@@ -64,8 +62,6 @@ function displaySearchData(data) {
   }
   $('.search-results').prepend(resultElement);
 };
-
-/*$(#search).transition({ rotate: '45deg' });*/
 
 function watchSubmit() {
   $('.search-form').submit(function(e) {
