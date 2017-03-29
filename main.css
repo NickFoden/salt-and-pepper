@@ -12,9 +12,12 @@ body {
   position: absolute;
   bottom: 1%;
   height: 25px;
-  width: 100%;
-  padding-left: 10%;
+  width: 99%;
   background-color: rgb(182,204,239);
+}
+
+.footerText {
+  padding-left: 45%;
   color: black;
 }
 
