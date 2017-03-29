@@ -60,7 +60,7 @@ function displaySearchData(data) {
     display(finish);
     
   } else {
-    resultElement += `<h4>No results</h4>`;
+    resultElement += `<h1>No results, try something else</h1>`;
   }
   $('.search-results').prepend(resultElement);
 };
