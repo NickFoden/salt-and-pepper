@@ -9,7 +9,6 @@ function displayContent(start){
   $("#container").removeClass("hidden");
 };
 
-
 function getDataFromApi(searchTerm, callback) {
   var settings = {
     url: Edamam_URL,

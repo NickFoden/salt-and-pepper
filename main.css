@@ -163,10 +163,8 @@ input[type=text] {
     margin: auto;
   }
   .card img {
-    margin-top: 3%;
-    margin-bottom: -5%;
     height: auto;
-    width: 75%;
+    width: 100%;
 
   }
 }
