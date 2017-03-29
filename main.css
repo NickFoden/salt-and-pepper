@@ -98,7 +98,7 @@ h4 {
 
 #search:hover{
   background-color: rgb(255, 140, 26);
-  border-radius: 75%;
+  border-radius: 40%;
 }
 
 input[type=text] {
