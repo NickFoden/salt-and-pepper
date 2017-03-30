@@ -162,10 +162,15 @@ input[type=text] {
     padding-top: 10px;
     margin: auto;
   }
-  .card img {
+  .card img{
     height: auto;
     width: 100%;
-
+  }
+  .title{
+    font-size: 2em;
+  }
+  .welcome{
+    font-size: 2em;
   }
 }
 /*end*/
