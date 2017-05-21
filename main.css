@@ -76,7 +76,7 @@ h4 {
   font-size: 2em;
   border: 1px solid rgb(63,110,203);
   border-radius: 1px;
-  background-color: #93BD2C;
+  background-color:  #EDDE05;
   transition-property: background;
   transition-duration: 1s;
   transition-timing-function: linear;
@@ -84,7 +84,7 @@ h4 {
 }
 
 #startButton:hover {
-  background-color: #EDDE05;
+  background-color: #93BD2C;
   border-radius: 4px;
   transition-duration: 1s;
   transition-timing-function: linear;
@@ -97,7 +97,7 @@ h4 {
 #search {
   border: 1px solid rgb(128,128,128);
   border-radius: 1px;
-  background-color: #93BD2C;
+  background-color: #EDDE05;
   font-size: 1.5em;
   margin: 0 0 5px 0;
   transition-property: background, border-radius;
@@ -107,7 +107,7 @@ h4 {
 }
 
 #search:hover{
-  background-color: #EDDE05;
+  background-color: #93BD2C;
   border-radius: 10%;
 }
 
@@ -129,8 +129,8 @@ input[type=text] {
   font-size: 1em;
   height: auto;
   width: 30%;
-  background-color: rgb(225, 237, 239);
-  border: 1px solid rgb(128, 128, 128);
+  background-color: #00887C;
+  border: 1px solid #545e6d;
   border-radius: 5px;
   padding: 10px;
   margin: 4px;
