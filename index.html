@@ -16,9 +16,6 @@
       <div class="welcome">
         <p>Welcome! If you are looking for a recipe for your next meal, you are in the right place. We have thousands of high rated recipes that we randomize. All you need to do is enter an ingredient or even a full dish name and we will show you a great recipe. Results will include a brief list of ingredients and link to the full instructions for shopping and preparation. If you don't like the first result, click random recipe again and again, or even change your entry and click random recipe again and again</p>
       </div>
-      <div class="footer">
-        <a href="https://developer.edamam.com/" target="_blank" class ="footerText">Powered by the Edamam api</a>
-      </div>
     </div>
     <div id="container" class="hidden"> 
       <form action="#" class="search-form">
@@ -26,11 +23,15 @@
         <p>(If the first result doesn't grab your appetite, go again and again)</p><br>
         <label for="query"></label>
         <input id="inputQuery" type="text" placeholder="What do you want to eat?" required>
-        <i class="fa fa-random" id="random" aria-hidden="true"></i><button id="search" type="submit">Random Recipe</button>
+        <i class="fa fa-random" id="random" aria-hidden="true"></i>
+        <button id="search" type="submit">Random Recipe</button>
       </form>
       <div class="search-results">
       </div>
     </div>
+  <div class="footer">
+    <a href="https://developer.edamam.com/" target="_blank" class ="footerText">Powered by the Edamam api</a>
+  </div>
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script type="text/javascript" src="app.js"></script>
 </body>

@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to left, #4CA1AF , #C4E0E5);
+  background: linear-gradient(to left, #71a9f7, #009FFF);
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }      
 
@@ -10,16 +10,19 @@ body {
 }
 
 .footer {
-  position: absolute;
-  bottom: 1%;
+  position: fixed;
+  bottom: 1px;
   height: 25px;
-  width: 99%;
+  width: 100%;
   background-color: rgb(182,204,239);
+  padding: 5px;
+  left: 0px;
 }
 
 .footerText {
-  padding-left: 45%;
+  padding-left: 75%;
   color: black;
+  font-size: .75em;
 }
 
 h1 {
@@ -45,7 +48,7 @@ h3 {
 }
 
 h3:hover {
-  color: rgb(255, 140, 26);
+  color: #EDDE05;
 }
 
 h4 {
@@ -72,8 +75,8 @@ h4 {
 	margin: 0 10px;
   font-size: 2em;
   border: 1px solid rgb(63,110,203);
-  border-radius: 6px;
-  background-color: rgb(63,152,203);
+  border-radius: 1px;
+  background-color: #93BD2C;
   transition-property: background;
   transition-duration: 1s;
   transition-timing-function: linear;
@@ -81,7 +84,10 @@ h4 {
 }
 
 #startButton:hover {
-  background-color: rgb(255, 140, 26);
+  background-color: #EDDE05;
+  border-radius: 4px;
+  transition-duration: 1s;
+  transition-timing-function: linear;
 }
 
 .hidden {
@@ -90,8 +96,8 @@ h4 {
 
 #search {
   border: 1px solid rgb(128,128,128);
-  border-radius: 6px;
-  background-color: rgb(63,152,203);
+  border-radius: 1px;
+  background-color: #93BD2C;
   font-size: 1.5em;
   margin: 0 0 5px 0;
   transition-property: background, border-radius;
@@ -101,8 +107,8 @@ h4 {
 }
 
 #search:hover{
-  background-color: rgb(255, 140, 26);
-  border-radius: 40%;
+  background-color: #EDDE05;
+  border-radius: 10%;
 }
 
 input[type=text] {
@@ -151,8 +157,14 @@ input[type=text] {
   margin: 0 10px;
 }
 
+.search-results a { 
+color: #93BD2C;
+}
 #random {
   font-size: 2.5em;
+  padding-left: 5px;
+  padding-right: 10px;
+  margin-top: 50px;
 }
 
 @media only screen and (max-device-width: 500px) {
