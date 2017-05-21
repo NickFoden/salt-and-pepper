@@ -104,6 +104,7 @@ h4 {
   transition-duration: .4s, 1s;
   transition-timing-function: linear;
   cursor: pointer;
+  height: 2.2em;
 }
 
 #search:hover{
