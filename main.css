@@ -1,7 +1,7 @@
 body {
-  background: linear-gradient(to left, #71a9f7, #009FFF);
+  background: linear-gradient(to left, #71a9f7, #009fff);
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-}      
+}
 
 .title {
   text-decoration: none;
@@ -14,7 +14,7 @@ body {
   bottom: 1px;
   height: 25px;
   width: 100%;
-  background-color: rgb(182,204,239);
+  background-color: rgb(182, 204, 239);
   padding: 5px;
   left: 0px;
 }
@@ -22,7 +22,7 @@ body {
 .footerText {
   padding-left: 75%;
   color: black;
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 h1 {
@@ -30,7 +30,7 @@ h1 {
   text-align: center;
 }
 
-h2 {  
+h2 {
   font-size: 1.5em;
   text-align: center;
   padding: 0;
@@ -42,13 +42,13 @@ h3 {
   text-align: center;
   margin-bottom: 0.5em;
   transition-property: color;
-  transition-delay: .2s;
-  transition-duration: 1s;
+  transition-delay: 0.2s;
+  transition-duration: 0.5s;
   transition-timing-function: linear;
 }
 
 h3:hover {
-  color: #EDDE05;
+  color: #edde05;
 }
 
 h4 {
@@ -60,8 +60,8 @@ h4 {
 }
 
 #beginButton {
-	display: flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -72,11 +72,11 @@ h4 {
 }
 
 #startButton {
-	margin: 0 10px;
+  margin: 0 10px;
   font-size: 2em;
-  border: 1px solid rgb(63,110,203);
-  border-radius: 1px;
-  background-color:  #EDDE05;
+  border: 1px solid rgb(63, 110, 203);
+  border-radius: 2px;
+  background-color: #edde05;
   transition-property: background;
   transition-duration: 1s;
   transition-timing-function: linear;
@@ -84,42 +84,42 @@ h4 {
 }
 
 #startButton:hover {
-  background-color: #93BD2C;
-  border-radius: 4px;
+  background-color: #ff1651;
+  border-radius: 5px;
   transition-duration: 1s;
   transition-timing-function: linear;
 }
 
 .hidden {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 #search {
-  border: 1px solid rgb(128,128,128);
+  border: 1px solid rgb(128, 128, 128);
   border-radius: 1px;
-  background-color: #EDDE05;
+  background-color: #edde05;
   font-size: 1.5em;
   margin: 0 0 5px 0;
   transition-property: background, border-radius;
-  transition-duration: .4s, 1s;
+  transition-duration: 0.4s, 1s;
   transition-timing-function: linear;
   cursor: pointer;
   height: 2.2em;
 }
 
-#search:hover{
-  background-color: #93BD2C;
+#search:hover {
+  background-color: #93bd2c;
   border-radius: 10%;
 }
 
-input[type=text] {
+input[type="text"] {
   height: 2em;
   font-size: 1.5em;
   width: 400px;
 }
 
 .search-form {
-	padding-top: 10px;
+  padding-top: 10px;
   margin: 0 10px;
   text-align: center;
 }
@@ -130,7 +130,7 @@ input[type=text] {
   font-size: 1em;
   height: auto;
   width: 30%;
-  background-color: #00887C;
+  background-color: #00887c;
   border: 1px solid #545e6d;
   border-radius: 5px;
   padding: 10px;
@@ -147,9 +147,9 @@ input[type=text] {
 
 .list {
   font-style: normal;
-  font-size: .6em;
+  font-size: 0.6em;
   text-align: left;
-  margin-top: -25px; 
+  margin-top: -25px;
 }
 
 .search-results {
@@ -158,8 +158,8 @@ input[type=text] {
   margin: 0 10px;
 }
 
-.search-results a { 
-color: #93BD2C;
+.search-results a {
+  color: #93bd2c;
 }
 #random {
   font-size: 2.5em;
@@ -174,19 +174,19 @@ color: #93BD2C;
     margin: 5% auto;
     display: block;
   }
-  .search-results{
+  .search-results {
     width: 95%;
     padding-top: 10px;
     margin: auto;
   }
-  .card img{
+  .card img {
     height: auto;
     width: 100%;
   }
-  .title{
+  .title {
     font-size: 2em;
   }
-  .welcome{
+  .welcome {
     font-size: 2em;
   }
 }
